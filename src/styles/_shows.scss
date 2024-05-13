@@ -10,6 +10,10 @@
         grid-template-columns: 1fr 1fr 1fr;//deixa lado a lado as ftos
         gap:24px;//faz dar espaço entre as fotos
 
+        @media (max-width:768px) {//pra celular ter 2 img
+            grid-template-columns: 1fr 1fr;
+        }
+
         &--is-active {
             display: grid;
         }
@@ -26,6 +30,13 @@
         display: flex;
         justify-content: center;
 
+        @media(max-width:768px) {
+            white-space: nowrap;//fazendo os elemtnos ficarem todos em uma lina msm q n caiba no container esse comando força eles a ficarem no container
+            overflow-x: scroll;
+            padding-left: 20px;
+        
+        }
+
         &__button{
             color: variaveis.$corTextoSecundario;
             font-size: 20px;
@@ -38,6 +49,10 @@
 
             &--is-active{//para reconhcer qual item ta ativo
                 border-color: variaveis.$corTextoSecundario;
+            }
+
+            @media(max-width:768px) {
+                font-size: 16px;
             }
         }
     }

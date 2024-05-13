@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a class="button button--secondary" href="#">Assine agora</a>
+                </li>
+                <li class="header__links__item" >
+                    <a class="button button--dark" href="#">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
             <h1 class="hero__content__branding">
@@ -115,7 +130,7 @@
         </ul>
     </section><!--final botoes-->
 
-    <section class="plans">
+    <section class="plans"><!--inicio dos pllanos-->
         <h2 class="title--big">Escolha seus planos</h2>
         <ul class="plans__list">
             <li class="plans__list__item">
@@ -146,7 +161,153 @@
         <p class="text--small">
             *o preço pode variar caso a assinatura seja feita atraves de outra plataforma
         </p>
-    </section>
+    </section><!--final dos planos-->
+
+    <section class="image-text-section"><!--inicio assita onde quiser-->
+        <img src="./dist/images/tv_pc_tablet_celular.png" alt="Imagem com Tv, celular, tablet e computador">
+        <div class="image-text-section__text_container">
+            <h2 class="title">Assita do seu jeito</h2>
+            <p class="text--big">
+                Assista a tela grande da TV ou assista no tablet,laptop, celular e outros aparelhos.Nossa seleção de titulos em 4k....
+            </p>
+        </div>
+    </section><!--final assita onde quiser-->
+
+    <section class="image-text-section image-text-section--image-full-width"><!--inicio rei leao-->
+        <picture><!--colocamos nesse atributo pra img funcionar em pc e mobile-->
+            <source media="(max-width:768px)" srcset="./dist/images/fundo_rei_leao_celular.png"/><!--a logica vai ser assim o site vai abrir e vai carregar chgar aqui ele vai le se esta no tamanho do mobile o max width se n tiver fica no tamanho do computador-->
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei leão">
+        </picture>
+        <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
+            <h2 class="title">Baixa filmes e séries</h2>
+            <p class="text--big">
+                Baixe e assita quando e onde quiser.Assim, seus favoritos estão sempre com você ,até mesmo sem internet.
+            </p>
+        </div>
+    </section><!--final rei leao-->
+
+    <section class="available-devices"><!--inicio serviços-->
+        <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/computador.png" alt="computador">
+                <h4 class="title--small">computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>PC windows</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/videogames.png" alt="computador">
+                <h4 class="title--small">computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>PC windows</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/tv.png" alt="computador">
+                <h4 class="title--small">computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>PC windows</li>
+                </ul>
+            </li>
+            <li class="available-devices__list__item">
+                <img src="./dist/images/dispositivos/celular.png" alt="computador">
+                <h4 class="title--small">computador</h4>
+                <ul class="text">
+                    <li>Chrome OS</li>
+                    <li>MacOS</li>
+                    <li>PC windows</li>
+                </ul>
+            </li>
+        </ul>
+    </section><!--final serviços-->
+
+    <section class="faq"> <!--FAQ-->
+        <h2 class="title">Perguntas frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question><!--div das perguntas-->
+                    Pergunta
+                </div>
+                <div class="faq__questions__item__answer text--big"><!--div das respostas-->
+                    <div>
+                        respostas para a pergunta.
+                    </div>
+                </div>
+            </li>
+            <li class="faq__questions__item  ">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <div>
+                        respostas para a pergunta.
+                    </div>
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    <div>
+                        respostas para a pergunta.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section> <!--final FAQ-->
+
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Glogo img">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Termos e condições de uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Politica e privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="">Proteção de dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compativeis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Sobre a disney</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat at da fafafaf a ff af ad a dadqdda
+            </p>
+            <p class="text--small">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium suscipit officiis sed reprehenderit nihil excepturi quam veniam .
+            </p>
+        </div>
+    </footer>
+
     <script src="./src/main.js"></script>
 </body>
 </html>
